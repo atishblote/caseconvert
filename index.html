@@ -67,7 +67,8 @@
 
             capBtn.addEventListener("click", (event) => {
 
-                let storeCap = textAreaField.value.split(" ");
+                let toLowerStoreCap = textAreaField.value.toLowerCase();
+                let storeCap = toLowerStoreCap.split(" ");
                 console.log(storeCap);
                 let legthstoreCap = [];
                 for(i = 0; i < storeCap.length; i++){    
