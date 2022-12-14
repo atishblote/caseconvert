@@ -70,11 +70,11 @@
 
                 let toLowerStoreCap = textAreaField.value.toLowerCase();
                 let storeCap = toLowerStoreCap.split(" ");
-                console.log(storeCap);
+                //console.log(storeCap);
                 let legthstoreCap = [];
                 for(i = 0; i < storeCap.length; i++){    
                     legthstoreCap[i] = storeCap[i][0].toUpperCase() + storeCap[i].substr(1);
-                    console.log(legthstoreCap);   
+                    //console.log(legthstoreCap);   
                 }
                 textAreaField.value = legthstoreCap.join(" ");  
                 // let legthstoreCap = storeCap[0][0].toUpperCase() + storeCap[0].substr(1);
@@ -88,7 +88,7 @@
                 selectCopyText = navigator.clipboard.writeText(textAreaField.value);;
                 // Copy the text inside the text field
                 
-                console.log(selectCopyText);
+                //console.log(selectCopyText);
             })
 
 
