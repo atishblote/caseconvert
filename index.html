@@ -46,7 +46,7 @@
         </div>
     </div>
 
-
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!-- javascrpit own -->
     <script>
         
@@ -100,6 +100,29 @@
 
         // })
 
+        
+        
+        
+ 
+    
+var settings = {
+  "url": "http://demomatrix.techwizards.io:7777/api/login",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "Access-Control-Request-Headers": "*"
+  },
+  "data": JSON.stringify({
+    "phone": "919699021846",
+    "password": "Abcd@123"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
 
 
 
